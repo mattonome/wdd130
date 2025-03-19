@@ -1,5 +1,16 @@
+/* This is the root variable declaration */
+:root {
+    --heading-background-color: darkblue;
+    --heading-text-color: white;
+    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --padding: 2px;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+
+
 nav{
-    background-color: darkblue;
+    background-color: var(--heading-background-color);
     padding: 10px;
 }
 
@@ -9,7 +20,7 @@ nav a{
     padding: 20px;
 }
 h1{
-    color: darkblue;
+    color: var(--heading-background-color);
 
 }
 
