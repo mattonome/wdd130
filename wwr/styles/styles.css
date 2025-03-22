@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Here is the color variables */
+:root {
+    --primary-color: #505033;
+    --secondary-color: #264969;
+    --accent1-color: #CFCFB4;
+    --accent2-color: #B4CDE4;
+    --heading-font: Georgia, sans-serif;
+    --body-font: "Roboto", sans-serif;
+  }
+  
+
+
+/* Here is the header*/
+.header{
+    min-height: 1vh;
+    width: 100%;
+    color: var(--secondary-color);
+    background-image: linear-gradient(var(--secondary-color), var(--secondary-color));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Here is the navigation bar*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+  
+}
+
+nav img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+    
+
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+    /* background-color: aquamarine;  */
+    
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a{
+    color: var(--accent1-color);
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Tahoma;
+}
+
+/*This is the hero photo section*/
+.herodiv{
+    width: 100%;
+    position: relative;
+
+}
+
+.herodiv img{
+    width: 100%;
+    padding-top: 2px;
+}
+
+.hero-btn{ /*This is for the button*/
+    bottom: 5%;
+    left: 85%;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: var(--accent1-color);
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+
+}
+
+.body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.h3{
+    font-family: "Georgia", sans-serif;
+    font-weight: 400;
+}
+/* This is Our facilities section */
+
+.facilities {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    font-family: "georgia", sans-serif;
+    font-weight: 400;
+    /* Remove display: inline; if it's not needed */
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between; /* distributes the columns evenly */
+    gap: 50px;
+    flex-wrap: nowrap; /* forces all items to stay in one row */
+  }
+  
+  .facilities-col {
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  
+  .facilities-col img {
+    width: 100%;
+  }
+  
+  .facilities-col p {
+    padding: 0;
+  }
+  
+  .facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+
+  .hero-2{
+    width: 100%;
+    position: relative;
+    padding-left: 10%;
+    background-color: var(--accent2-color);
+  }
+
+  .hero-2 img{
+    width: 58%;
+    padding: 20px;
+    
+  }
+
+ .text-box{
+    background-color: var(--primary-color);
+    color:white;
+    width: 35%;
+    height: 65%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    text-align: left;
+    padding: 50px 50px 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+ }
+
+ .hero-2 .hero-btn{
+    bottom: 20%;
+    left: 9%;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 12px 34px 12px;
+    font-size: 13px;
+    background: var(--accent1-color);
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+
+ }
+
+ .footer {
+    position: relative; /* Enables absolute positioning for children */
+    text-align: center; /* Centers the paragraph */
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    border: solid 1px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: white;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .social-icons {
+    position: absolute; 
+    right: 20px;        
+    top: 50%;           /* Vertically center relative to footer */
+    transform: translateY(-50%);
+    display: flex;      /* Layout icons in a row */
+    gap: 10px;
+  }
+  
+  .social-icons a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+  }
+  
+ 
