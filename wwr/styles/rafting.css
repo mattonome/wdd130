@@ -16,6 +16,7 @@
   background-position: center;
   background-size: cover;
   position: relative;
+  display: grid;
 }
 
 /* Here is the navigation bar*/
@@ -99,17 +100,59 @@ nav img{
   margin: 0 0 10px 10px;
 }
 
+
+.history {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  background-color: var(--accent1-color);
+  padding-bottom: 20px;
+  
+}
+
+.history > :first-child {
+  grid-column: 1 / -1;
+}
+
+
+  
+
 .history h2{
   font-family: var(--heading-font);
   color: var(--secondary-color);
   font-size: 20px;
+  text-align: center;
 }
 
 .history p {
   font-family: var(--body-font);
   font-size: 10px;
-  margin: 10px 0; 
+  margin: 0; 
+  padding-bottom: 20px 0 20px 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+.adventure{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.adventure > :first-child {
+  grid-column: 1 / -1;
+}
+
+.adventure h2{
+  text-align: center;
+}
+
+.adventure img {
+  width: 100%;
+  height: auto;
+  display: block; 
+}
+
+
 
 .footer {
   position: relative; 
