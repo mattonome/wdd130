@@ -128,7 +128,6 @@ nav img{
   font-family: var(--body-font);
   font-size: 10px;
   margin: 0; 
-  padding-bottom: 20px 0 20px 0;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -152,6 +151,9 @@ nav img{
   display: block; 
 }
 
+.adventure figcaption{
+  padding-top: 8px;
+}
 
 
 .footer {
