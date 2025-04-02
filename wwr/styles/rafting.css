@@ -187,9 +187,9 @@ nav img{
 }
 
 .social-icons img {
-  width: 24px; /* Set the desired width */
-  height: 24px; /* Set the desired height */
-  margin: 0 0px; /* Optional: adds spacing between icons */
+    width: 24px; /* Set the desired width */
+    height: 24px; /* Set the desired height */
+    margin: 0 5px; /* Optional: adds spacing between icons */
 }
 
 
@@ -222,6 +222,7 @@ width: auto;
   position: absolute;
   top: 300px;  
   font-size: 40px;
+  /* background-color: var(--secondary-color); */
   width: 70.28%;
   text-align: center;
   color: white;
