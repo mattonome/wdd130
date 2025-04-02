@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #505033;
-    --secondary-color: #264969;
-    --accent1-color: #CFCFB4;
-    --accent2-color: #B4CDE4;
-    --heading-font: Georgia, sans-serif;
-    --body-font: "Roboto", sans-serif;
+  --primary-color: #505033;
+  --secondary-color: #264969;
+  --accent1-color: #CFCFB4;
+  --accent2-color: #B4CDE4;
+  --heading-font: Georgia, sans-serif;
+  --body-font: "Roboto", sans-serif;
   }
 
 /* Here is the header*/
@@ -22,45 +22,45 @@
 /* Here is the navigation bar*/
 
 
-  nav{
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    font-family: var(--body-font);
-    font-size: 20px;
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-family: var(--body-font);
+  font-size: 20px;
   
 }
 
 nav img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
     
     
 
 }
 
 .nav-links{
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
     
 }
 
 .nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
 
 }
 
 .nav-links ul li a{
-    color: var(--accent1-color);
-    text-decoration: none;
-    font-size: 13px;
-    font-family: var(--heading-font);
+  color: var(--accent1-color);
+  text-decoration: none;
+  font-size: 13px;
+  font-family: var(--heading-font);
 } 
 
 .herodiv img{
@@ -210,6 +210,11 @@ nav img{
   font-family: var(--body-font);
 }
 
+.map iframe{
+  width: 650px;
+  height: 450px;
+}
+
 .hero11{
 width: auto;
 }
@@ -253,7 +258,7 @@ width: auto;
   
 }
 
-.map{
+.main map{
   max-width: 100%;
 }
 
