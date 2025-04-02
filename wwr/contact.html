@@ -47,85 +47,85 @@
 
 
     <main class="contact1">
-        <div class="info-div">
-            <div class="hero11">
-                <img src="./images/rafting60_1024.jpeg" alt="">
-                <h1>Contact Us</h1>
+            <div class="info-div">
+                <div class="hero11">
+                    <img src="./images/rafting60_1024.jpeg" alt="">
+                    <h1>Contact Us</h1>
+                </div>
+                <h2>Send Us a Message</h2>
+                <p>White Water Rafting</p>
+                <p>Phone: 888-888-8888</p>
+                <p>Email: <a href="mailto:">exampleemail@gmail.com</a></p>
             </div>
-            <h2>Send Us a Message</h2>
-            <p>White Water Rafting</p>
-            <p>Phone: 888-888-8888</p>
-            <p>Email: <a href="mailto:">exampleemail@gmail.com</a></p>
-        </div>
+            
+            <!-- Map Section: Displays the location map -->
+            <div class="map">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1717.4436064734757!2d-111.78506376134168!3d43.81465792523806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e0!3m2!1sen!2sng!4v1743563552610!5m2!1sen!2sng"></iframe>
+            </div>
         
-        <!-- Map Section: Displays the location map -->
-        <div class="map">
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1717.4436064734757!2d-111.78506376134168!3d43.81465792523806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e0!3m2!1sen!2sng!4v1743563552610!5m2!1sen!2sng"></iframe>
-        </div>
-    </section>
 
-    <!-- Employee Section: Introduces team members -->
+        <!-- Employee Section: Introduces team members -->
 
-    <section class="team">
-        <h2>Meet Our Team</h2>
-        <div class="employee">
-            <img src="./images/employee1.png" alt="Employee Name">
-            <p><strong>Mark Billy</strong><br>Customer Relations Manager</p>
-        </div>
-        <div class="employee">
-            <img src="./images/employee2.png" alt="Employee Name">
-            <p><strong>Sarah Smith</strong><br>Adventure Coordinator</p>
-        </div>
-        <div class="employee">
-            <img src="./images/employee3.jpeg" alt="Employee Name">
-            <p><strong>Chu Zio</strong><br>Safety Officer</p>
-        </div>
-    </section>
-
-<!-- Contact Form Section: Allows users to send messages -->
-    <section class="contact-form">
-        <h2>Get in Touch</h2>
-        <form action="submit_form.php" method="post">
-            <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="./images/employee1.png" alt="Employee Name">
+                <p><strong>Mark Billy</strong><br>Customer Relations Manager</p>
             </div>
-
-            <div class="form-group">
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+            <div class="employee">
+                <img src="./images/employee2.png" alt="Employee Name">
+                <p><strong>Sarah Smith</strong><br>Adventure Coordinator</p>
             </div>
+            <div class="employee">
+                <img src="./images/employee3.jpeg" alt="Employee Name">
+                <p><strong>Chu Zio</strong><br>Safety Officer</p>
+            </div>
+        </section>
 
-            <fieldset class="form-group">
-                <legend>Purpose of Message:</legend>
-                <div>
-                    <input type="radio" id="general" name="purpose" value="General Inquiry" required>
-                    <label for="general">General Inquiry</label>
+        <!-- Contact Form Section: Allows users to send messages -->
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-                <div>
-                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-                    <label for="reservation">Reservation Question</label>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div>
-                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-                    <label for="suggestion">Website Suggestion</label>
+
+                <fieldset class="form-group">
+                    <legend>Purpose of Message:</legend>
+                    <div>
+                        <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                        <label for="general">General Inquiry</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                        <label for="reservation">Reservation Question</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-            </fieldset>
 
-            <div class="form-group">
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
+                <div class="form-group">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
 
-            <div class="form-group">
-                <input type="checkbox" id="subscribe" name="subscribe">
-                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-            </div>
-
-            <button type="submit">Submit Message</button>
-        </form>
-    </section>
+                <button type="submit">Submit Message</button>
+            </form>
+        </section>
 
 
 
@@ -139,7 +139,7 @@
             <a href="#"><img src="./images/facebook.svg" alt="Facebook"></a>
             <a href="#"><img src="./images/twitter.svg" alt="Twitter"></a>
             <a href="#"><img src="./images/intagram.svg" alt="Instagram"></a>
-            <a href="#"><img src="./images/youtube.svg" alt="YouTube"></a></br>
+            <a href="#"><img src="./images/youtube.svg" alt="YouTube"></a>
             <p><a href="./images/wireframe.png">View Wireframe</a></p>
         </div>
     </footer>
