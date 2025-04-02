@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us (Rafting Company)</title>
+        
+          <meta name="description" content="This is the Contact Us Page where the site visitor can actually give feedback to us.">
+          <meta name="author" content="Akhabue Onome Matthew"> 
+       
+        <link rel="stylesheet" href="styles/rafting.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+    </head>
+    
+<body>
+    <header>
+        <section class="header">
+        
+            <nav>
+            <a href="contact.html">
+                <img src="./images/logo.jpeg" alt="Logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact US</a></li>
+                </ul>
+            </div>
+            </nav>
+        
+    
+        </section>
+    </header> 
+
+
+    <main class="contact1">
+        <div class="info-div">
+            <div class="hero11">
+                <img src="./images/rafting60_1024.jpeg" alt="">
+                <h1>Contact Us</h1>
+            </div>
+            <h2>Send Us a Message</h2>
+            <p>White Water Rafting</p>
+            <p>Phone: 888-888-8888</p>
+            <p>Email: <a href="mailto:">exampleemail@gmail.com</a></p>
+        </div>
+
+        <div class="map">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1717.4436064734757!2d-111.78506376134168!3d43.81465792523806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e0!3m2!1sen!2sng!4v1743563552610!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Employee section -->
+
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="employee">
+            <img src="./images/employee1.png" alt="Employee Name">
+            <p><strong>Mark Billy</strong><br>Customer Relations Manager</p>
+        </div>
+        <div class="employee">
+            <img src="./images/employee2.png" alt="Employee Name">
+            <p><strong>Sarah Smith</strong><br>Adventure Coordinator</p>
+        </div>
+        <div class="employee">
+            <img src="./images/employee3.jpeg" alt="Employee Name">
+            <p><strong>Chu Zio</strong><br>Safety Officer</p>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <fieldset class="form-group">
+                <legend>Purpose of Message:</legend>
+                <div>
+                    <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                    <label for="general">General Inquiry</label>
+                </div>
+                <div>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label>
+                </div>
+                <div>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+            </div>
+
+            <button type="submit">Submit Message</button>
+        </form>
+    </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <p>©2025 | White Water Rafting | Matthew Onome Akhabue</p>
+        <div class="social-icons">
+            <a href="#"><img src="./images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="./images/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="./images/intagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="./images/youtube.svg" alt="YouTube"></a></br>
+            <p><a href="./images/wireframe.png">View Wireframe</a></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
