@@ -59,6 +59,12 @@ button[type="submit"] {
     cursor: pointer;
 }
 
+.bold-red {
+    color: red;
+    font-weight: bold;
+}
+
+
 button[type="submit"]:hover {
     background: navy;
 }
