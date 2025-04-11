@@ -57,7 +57,7 @@ nav img{
 }
 
 .nav-links ul li a{
-  color: var(--accent1-color);
+  color:white;
   text-decoration: none;
   font-size: 13px;
   font-family: var(--heading-font);
@@ -71,15 +71,238 @@ nav img{
 
 .herodiv h1{
   position: absolute;
-  top: 230px;  
+  top: 210px;  
   font-size: 40px;
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   width: 98%;
   text-align: center;
-  color: var(--accent1-color);
+  color:black;
   padding: 5px;
   
 }
+/* This is the home page section */
+body, main {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+}
+
+.home img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.home h1 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 48px;
+  color:black;
+  /* text-shadow: 2px 2px 8px rgba(0,0,0,0.6); */
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  text-align: center;
+  width: 90%;
+}
+
+/* Newsletter form overlay on hero image */
+.newsletter-overlay {
+  position: absolute;
+  bottom: 10%;
+  left: 70%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 2;
+  width: 90%;
+  max-width: 500px;
+  font-family: "Roboto", sans-serif;
+}
+
+.newsletter-overlay h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.newsletter-overlay form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.newsletter-overlay input {
+  padding: 0.75rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.newsletter-overlay button {
+  padding: 0.75rem;
+  font-size: 16px;
+  color: white;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-overlay button:hover {
+  background-color: var(--accent1-color);
+  color: white;
+}
+
+
+
+.cta{
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/rafting19_600.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+  font-family: "Roboto", sans-serif;
+  ;
+  
+}
+
+.cta h1{
+  color: white;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.hero-btn{ /*This is for the button*/
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.hero-btn:hover{
+  border: 1px solid var(--accent1-color);
+  background: var(--secondary-color);
+  transition: 1s;
+}
+
+
+/* This is Our facilities section */
+
+
+.facilities{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facilities-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.facilities-col img{
+  width: 100%;
+  border-radius: 10px;
+   
+}
+
+.facilities-col p{
+  padding: 0;
+}
+
+.facilities-col h3{
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+
+}
+
+
+/* Our Testimonials section */
+
+.testimonials {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.testimonials-col {
+  flex-basis: 43%; /* Instead of 44px, use percentage for responsiveness */
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+
+.testimonials-col img {
+  height: 50px;
+  width: auto;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+  display: flex;
+}
+
+/* Ensure parent container uses flexbox */
+.row {
+  display: flex;
+  justify-content: space-between; /* Ensures columns are evenly spaced */
+  flex-wrap: wrap; /* Allows responsiveness */
+}
+
+.testimonials-col p{
+  padding: 0;
+ 
+}
+
+.testimonials-col h3{
+  margin-top: 15px;
+  text-align: left;
+
+}
+
+/* This is to change the color for the star rating icon */
+.testimonials-col .fa{
+  color: #f44336;
+  
+}
+/* This is to change the color for the empty star rating icon */
+.testimonials-col .far{
+  color: #f44336;
+}
+/* This is to change the color for the half star rating icon */
+.testimonials-col .fas{
+  color: #f44336;
+}
+
+
 
 .text-box {
   position: absolute;
@@ -90,7 +313,7 @@ nav img{
   padding: 20px;
   width: 80%;
   height: auto;
-  margin-top: -650px; 
+  margin-top: -500px; 
 }
 
 .text-box img.small-image {
@@ -119,7 +342,7 @@ nav img{
 
 .history h2{
   font-family: var(--heading-font);
-  color: var(--secondary-color);
+  color: black;
   font-size: 20px;
   text-align: center;
 }
@@ -207,7 +430,7 @@ nav img{
 .contact1 h1, h2 {
   color: #444;
   margin-bottom: 15px;
-  font-family: var(--body-font);
+  font-family: "Roboto", sans-serif;
 }
 
 .map iframe{
@@ -232,6 +455,7 @@ width: auto;
   text-align: center;
   color: white;
   padding: 5px;
+  font-family: var(--heading-font);
   
 }
 
@@ -322,9 +546,105 @@ button {
   color: #fff;
   border: none;
   padding: 10px 15px;
-  border-radius: 
+  border-radius: 5px; 
 }
 
 button[type="submit"]:hover{
   background: navy;
+}
+
+/* This is the trips section */
+.trips-section {
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #f9f9f9, #e9f1f9);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.trips-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #004080;
+}
+
+.table-container {
+  overflow-x: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.trip-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.trip-table thead {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.trip-table th,
+.trip-table td {
+  padding: 1rem;
+  text-align: center;
+  font-size: 16px;
+}
+
+.trip-table tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s;
+}
+
+.trip-table tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+.book-btn {
+  background-color: #0077cc;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Tags for difficulty levels */
+.tag {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.beginner {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.intermediate {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.advanced {
+  background-color: #ffeeba;
+  color: #7d5100;
+}
+
+.expert {
+  background-color: #f8d7da;
+  color: #721c24;
 }
