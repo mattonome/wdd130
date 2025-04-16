@@ -328,7 +328,7 @@ body, main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  background-color: var(--accent1-color);
+  background-color: lightgoldenrodyellow;
   padding-bottom: 20px;
   
 }
